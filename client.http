@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:8080
+
+# @name create_candidate
+POST {{baseUrl}}/candidate
+Content-Type: application/json
+
+{
+  "username": "gabriel",
+  "name": "Gabriel Siqueira",
+  "email": "gabriel@gmail.com",
+  "password": "123456",
+  "description": "Desenvolvedor FullStack"
+}
+
+###
+
+# @name create_company
+POST {{baseUrl}}/company
+Content-Type: application/json
+
+{
+  "username": "gabriel10",
+  "email": "gabriel10@gmail.com",
+  "password": "123456",
+  "website": "Meu site",
+  "name": "Gabriel",
+  "description": "Legal"
+}
+
+###
+
+# @name create_job
+POST {{baseUrl}}/job
+Content-Type: application/json
+
+{
+  "companyId": "c37edb09-a1c2-49af-9578-128977c5a041",
+  "description": "Job",
+  "benefits": "Comer",
+  "level": "hard"
+
+}
